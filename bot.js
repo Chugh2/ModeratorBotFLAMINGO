@@ -91,7 +91,7 @@ client.on("message", message => {
     }
 });
 //SHUTDOWN COMMAND
-client.on('message', message => {
+client.on('message', async message => {
     const args = message.content.substring(prefix.length).trim().split(" ");
     const command = args.shift();
 
