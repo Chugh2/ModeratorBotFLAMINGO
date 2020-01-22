@@ -1,0 +1,25 @@
+{
+  "name": "ModeratorBotFLAMINGO",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chugh2/ModeratorBotFLAMINGO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chugh2/ModeratorBotFLAMINGO/issues"
+  },
+  "homepage": "https://github.com/Chugh2/ModeratorBotFLAMINGO#readme",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "opusscript": "0.0.7",
+    "ytdl-core": "^1.0.7"
+  }
+}
