@@ -89,5 +89,22 @@ client.on("message", message => {
         .catch(message.author.send("Psst.. Master.. I failed to join the person. Perhaps give me administrator permisssions and drag my role right under yours?"));
     }
 });
+//SHUTDOWN COMMAND
+client.on('message', message => {
+    const args = message.content.substring(prefix.length).trim().split(" ");
+    const command = args.shift();
 
-//HOW ARE YOU READING THIS HACKER xD
+    if(command == "shutdown") {
+        if(!args[0]) return message.channel.send("Master, please specify bot at the end of shutdown(example at the end), or else I might break. E.G: mod!shutdown bot");
+        const typeOfToShutdown = args[0];
+        if(typeOfToShutdown == "bot") {
+            await message.channel.send("Shutting down, master. Contact TheMilkyWay if you would like to power me back up. Bye!");
+            client.user.setPresence({
+                status: "invisible"
+            })
+            process.exit();
+        }
+    }
+});
+
+//Welcome to the bottom of the script whoever you are.
