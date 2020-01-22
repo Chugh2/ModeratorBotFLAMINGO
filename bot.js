@@ -1,5 +1,6 @@
 const discord = require('discord.js');
 const client = new discord.Client();
+const token = process.env.token;
 const prefix = process.env.prefix;
 const messagesFromWarrior = [];
 
@@ -107,4 +108,5 @@ client.on('message', message => {
     }
 });
 
+client.login(token)
 //Welcome to the bottom of the script whoever you are.
